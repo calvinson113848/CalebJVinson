@@ -6,17 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CJV</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+	    * {
+		    margin: 0;
+		    padding: 0;
+	    }
+
+	    body {
+		    font-family: 'Arial', sans-serif;
+	    }
+	    .navbar {
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    top: 0px;padding: 10px 20px;
+	    }
+
+	    .nav-list {
+		    display: flex;
+		    list-style: none;
+	    }
+
+	    .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+ 
+        .nav-list li a:hover {
+            color: #ffd700;
+            /* Change the color on hover */
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+ 
+        #search {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
+ 
+        .btn {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+ 
+        .btn:hover {
+            background-color: #000;
+            /* Change the background color on hover */
+            color: #ffd700;
+        }
+	    
+    </style>
   </head>
   <body>
 	<header>
 		<h1>Caleb J. Vinson</h1>
-		<nav>
-			<ul>
+		<nav class = "navbar">
+			<ul class = "nav-list">
 				<li><a href = "#About-Me">About Me</a></li>
 				<li><a href = "#Academics">Academics</a></li>
 				<li><a href = "#Projects">Projects</a></li>
 				<li><a href = "#Involvement">Involvement</a></li>
 			</ul>
+			<div class = "rightnav">
+				<input type = "text" name = "search"
+					id = "search" placeholder = "Search">
+				<button class = "btn btn-sm">Search</button>
+			</div>
 		</nav>
 	</header>
 	  <section>
