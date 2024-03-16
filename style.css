@@ -1,20 +1,3 @@
-body {
-  background: white;
-  color: white;
-  font-family: Helvetica;
-  margin: 0;
-}
-header {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  display: flex;
-}
-
-h1 {
-  color: #D92906;
-  background-color: black;
-}
 /* Add a black background color to the top navigation */
 .topnav {
     position: relative;
