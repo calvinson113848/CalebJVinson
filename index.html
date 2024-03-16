@@ -1,69 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CJV</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-	    * {
-		    margin: 0;
-		    padding: 0;
-	    }
-
-	    body {
-		    font-family: 'Helvetica', sans-serif;
-	    }
-	    .navbar {
-		    display: flex;
-		    align-items: center;
-		    justify-content: space-between;
-		    padding: 10px 20px 10px;
-	    }
-
-	    .nav-list {
-		    display: flex;
-		    list-style: none;
-	    }
-
-	    .nav-list li:last-child {
-            margin-right: 0;
-        }
- 
-        .nav-list li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            transition: color 0.3s ease-in-out;
-        }
- 
-        .nav-list li a:hover {
-            color: #ffd700;
-            /* Change the color on hover */
-        }
-    </style>
-  </head>
-  <body>
-	  <header>
-		<h1 class = "navbar">Caleb J. Vinson</h1>
-	  </header>
-	  <div class="topnav">
-	    <!-- Centered link -->
-	    <div class="topnav-centered">
-		<a href="#Academics" class="active">Academics</a>
-		<a href="#Research" class="active">Research</a>
-		<a href="#Projects" class="active">Projects</a>
-	        <a href="#Home" class="active">Home</a>
-		<a href="#Work" class="active">Work</a>
-		<a href="#Extracurriculars" class="active">Extracurriclars</a>
-		<a href="#About-Me" class="active">About Me</a>
-	    </div>
-	  </div>
-	  <section>
-		  <h2 id = "About-Me">About Me</h2>
-	  </section>
-	  <main>
+    <title>Caleb J. Vinson's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Caleb J. Vinson</h1>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#academics" class="nav__link">Academics</a></li>
+            <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#extracurriculars" class="nav__link">Extracurriculars</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="greeting">
+            <h2>Welcome!</h2>
+            <p>Discover the journey, achievements, and aspirations of Caleb J. Vinson.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
 		  
 	  </main>
   </body>
