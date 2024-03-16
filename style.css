@@ -76,31 +76,3 @@ header h1 {
         border: none;
         cursor: pointer;
     }
-
-    .hamburger {
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        position: relative;
-        transform: rotate(0deg);
-        transition: .5s ease-in-out;
-    }
-
-    .hamburger:before,
-    .hamburger:after {
-        width: 100%;
-        position: absolute;
-        height: 3px;
-        background-color: white;
-        content: "";
-        transition: all 0.3s;
-    }
-
-    .hamburger:before {
-        top: -10px;
-    }
-
-    .hamburger:after {
-        bottom: -10px;
-    }
-}
